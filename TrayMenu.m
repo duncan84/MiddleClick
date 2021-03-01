@@ -39,12 +39,12 @@
 {
 	if([myController getClickMode])
 	{
-		[clickItem setState:NSOnState];
-		[tapItem setState:NSOffState];
+		[clickItem setState:NSControlStateValueOn];
+		[tapItem setState:NSControlStateValueOff];
 	}
 	else {
-		[clickItem setState:NSOffState];
-		[tapItem setState:NSOnState];
+		[clickItem setState:NSControlStateValueOff];
+		[tapItem setState:NSControlStateValueOn];
 	}
 }
 
