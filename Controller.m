@@ -3,6 +3,7 @@
 //  MiddleClick
 //
 //  Created by Alex Galonsky on 11/9/09.
+//  Modified by Duncan bell on 2021/03/01
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
@@ -84,7 +85,8 @@ BOOL pressed;
 	
 	//add traymenu
     TrayMenu *menu = [[TrayMenu alloc] initWithController:self];
-    [NSApp setDelegate:menu];
+    
+    [NSApp setDelegate:(id<NSApplicationDelegate>)menu];
     [NSApp run];
 	
 	[pool release];

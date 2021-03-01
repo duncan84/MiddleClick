@@ -2,6 +2,7 @@
 //  TrayMenu.m
 //
 //  Created by Clem on 21.06.09.
+//  Modified by Duncan bell on 2021/03/01
 //
 
 #import "TrayMenu.h"
@@ -48,9 +49,6 @@
 	}
 }
 
-- (void) openFinder:(id)sender {
-	[[NSWorkspace sharedWorkspace] launchApplication:@"Finder"];
-}
 
 - (void) actionQuit:(id)sender {
 	[NSApp terminate:sender];
@@ -101,7 +99,6 @@
     
 	_statusItem = [[[NSStatusBar systemStatusBar]
                         statusItemWithLength:NSSquareStatusItemLength] retain];
-    _statusItem.highlightMode = YES;
     _statusItem.menu = menu;
     _statusItem.button.toolTip = @"MiddleClick";
     _statusItem.button.image = icon;
