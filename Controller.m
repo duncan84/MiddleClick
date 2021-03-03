@@ -78,11 +78,6 @@ BOOL pressed;
         MTDeviceStart((MTDeviceRef)[deviceList objectAtIndex:i],0); //start sending events
 	}
 	
-	//register a callback to know when osx come back from sleep
-	WakeObserver *wo = [[WakeObserver alloc] init];
-	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: wo selector: @selector(receiveWakeNote:) name: NSWorkspaceDidWakeNotification object: NULL];
-	
-	
 	//add traymenu
     TrayMenu *menu = [[TrayMenu alloc] initWithController:self];
     
