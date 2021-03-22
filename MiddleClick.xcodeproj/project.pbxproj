@@ -237,7 +237,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8HVJZPLT72;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -250,7 +250,7 @@
 				GCC_PREFIX_HEADER = MiddleClick_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MARKETING_VERSION = "1.0.3-alpha";
+				MARKETING_VERSION = "1.0.4-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = me.iwr.middleClick;
 				PRODUCT_NAME = MiddleClick;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -266,7 +266,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8HVJZPLT72;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -278,7 +278,7 @@
 				GCC_PREFIX_HEADER = MiddleClick_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MARKETING_VERSION = "1.0.3-alpha";
+				MARKETING_VERSION = "1.0.4-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = me.iwr.middleClick;
 				PRODUCT_NAME = MiddleClick;
 				PROVISIONING_PROFILE_SPECIFIER = "";

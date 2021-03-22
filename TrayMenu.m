@@ -50,6 +50,14 @@
 }
 
 
+- (void) actionRelaunch:(id)sender {
+    NSString *relaunch = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"relaunch"];
+    int procid = [[NSProcessInfo processInfo] processIdentifier];
+    [NSTask launchedTaskWithLaunchPath:relaunch arguments:[NSArray arrayWithObjects:[[NSBundle mainBundle] bundlePath], [NSString stringWithFormat:@"%d",procid], nil]];
+    [NSApp terminate:sender];
+}
+
+
 - (void) actionQuit:(id)sender {
 	[NSApp terminate:sender];
 }
@@ -73,7 +81,13 @@
 	
 	// Add Separator
 	[menu addItem:[NSMenuItem separatorItem]];*/
-	
+    
+    // Add Quit Action
+    menuItem = [menu addItemWithTitle:@"Relaunch"
+                               action:@selector(actionRelaunch:)
+                        keyEquivalent:@""];
+    [menuItem setTarget:self];
+    
 	// Add Quit Action
 	menuItem = [menu addItemWithTitle:@"Quit"
 							   action:@selector(actionQuit:)
